@@ -10,8 +10,9 @@ Freight brokers manually cross-check every carrier invoice against the rate conf
 
 1. **Extract** — pulls structured fields (load ID, carrier, linehaul rate, accessorials, POD status) out of raw invoice text, via an LLM (Claude) or a regex-based fallback so the demo runs with zero API cost.
 2. **Match** — deterministically checks the invoice against the rate confirmation on file: rate accuracy, accessorial authorization and amount, POD presence, duplicate-invoice pattern.
-3. **Decide** — clean matches are auto-approved; anything that fails a check is flagged with a plain-language reason and a drafted dispute email, ready for a human to approve or edit.
-4. **Evaluate** — a labeled synthetic dataset + eval harness scores the pipeline's precision/recall, so results are measured honestly rather than asserted.
+3. **Decide** — clean matches are auto-approved; anything that fails a check is flagged with a plain-language reason and a drafted dispute email.
+4. **Alert a human** — flagged invoices are posted to a Slack channel (via an Incoming Webhook) with the discrepancy and the drafted dispute email, so someone can act on it immediately. If no webhook is configured, it logs locally instead, so the rest of the pipeline still works without Slack set up.
+5. **Evaluate** — a labeled synthetic dataset + eval harness scores the pipeline's precision/recall, so results are measured honestly rather than asserted.
 
 ## Quickstart
 
@@ -32,6 +33,8 @@ uvicorn src.api:app --reload
 ```
 
 Set `ANTHROPIC_API_KEY` in your environment to use LLM-based extraction on raw invoice text; without it, `src/extraction.py` falls back to a regex parser so the whole pipeline still runs.
+
+Set `SLACK_WEBHOOK_URL` (from a Slack Incoming Webhook — see api.slack.com/apps) to actually post flagged invoices to a channel; without it, alerts are printed to the console instead.
 
 ## Evaluation results (on the included synthetic dataset)
 
@@ -59,7 +62,7 @@ Python, FastAPI, Anthropic API (optional), regex fallback for offline extraction
 ## Roadmap
 
 - Wire a real TMS/Airtable connection in place of the local JSON "rate confirmation store"
-- Add a Slack human-approval step for flagged invoices (currently the API just returns the drafted dispute email)
+- Add clickable Approve/Dispute buttons in Slack (requires a Slack app with an Interactivity endpoint, not just an Incoming Webhook — current alerts are informational, not yet actionable in-Slack)
 - Persist results to Postgres and add a small dashboard (match rate, $ caught, cycle time)
 - Add OCR (e.g. AWS Textract) ahead of extraction to handle real scanned PDFs, not just plain text
 

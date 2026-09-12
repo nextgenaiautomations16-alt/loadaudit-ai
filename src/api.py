@@ -13,6 +13,7 @@ from pydantic import BaseModel
 from .extraction import extract_invoice
 from .matcher import match_invoice_to_rc
 from .dispute_drafting import draft_dispute_email
+from .notifications import send_flagged_invoice_alert
 
 app = FastAPI(title="LoadAudit AI")
 
@@ -63,7 +64,9 @@ def _audit(invoice: dict):
         "reasons": result.reasons,
     }
     if result.status == "flagged":
-        response["dispute_email_draft"] = draft_dispute_email(invoice, result)
+        dispute_email = draft_dispute_email(invoice, result)
+        response["dispute_email_draft"] = dispute_email
+        response["slack_alert_sent"] = send_flagged_invoice_alert(invoice, result, dispute_email)
     return response
 
 

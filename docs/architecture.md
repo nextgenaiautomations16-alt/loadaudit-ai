@@ -20,8 +20,10 @@ Normalized invoice JSON
       +--> clean  --> auto-approve --> (accounting export, not yet built)
       |
       +--> flagged --> dispute email drafted (src/dispute_drafting.py)
-                        --> human approval step (Slack/email — not yet wired,
-                            see Roadmap in README)
+                        --> Slack alert posted (src/notifications.py) with
+                            the discrepancy + drafted email, for a human to
+                            act on (clickable in-Slack approve/dispute
+                            buttons are a roadmap item, not yet built)
       |
       v
 Monitoring / evaluation (eval/run_eval.py)
@@ -42,11 +44,13 @@ need to defend in front of an AP manager or auditor.
 ## What's stubbed vs. real
 
 - Real: extraction (LLM + fallback), matching, dispute email drafting, a
-  working FastAPI webhook, an evaluation harness with real precision/recall
-  numbers on synthetic data.
+  working FastAPI webhook, Slack alerting for flagged invoices, an
+  evaluation harness with real precision/recall numbers on synthetic data.
 - Stubbed/roadmap: TMS integration (currently reads a local JSON file
-  standing in for "the rate confirmation store"), Slack human-approval step,
-  accounting-system export, a persistent database (currently flat files).
+  standing in for "the rate confirmation store"), clickable in-Slack
+  approve/dispute buttons (current Slack step is an informational alert,
+  not yet a two-way approval action), accounting-system export, a
+  persistent database (currently flat files).
 
 Being explicit about this split is intentional — a hiring manager can see
 exactly how far the MVP goes and what the next integration step would be.
