@@ -1,0 +1,415 @@
+[
+  {
+    "load_id": "L1000",
+    "carrier": "Blue Ridge Freight",
+    "origin": "Seattle, WA",
+    "destination": "Portland, OR",
+    "linehaul_rate": 2603.54,
+    "accessorials": [
+      {
+        "type": "detention",
+        "amount": 59.53,
+        "authorized": true
+      },
+      {
+        "type": "tarp",
+        "amount": 78.11,
+        "authorized": true
+      }
+    ],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1001",
+    "carrier": "Frontier Carriers",
+    "origin": "Houston, TX",
+    "destination": "Denver, CO",
+    "linehaul_rate": 961.03,
+    "accessorials": [],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1002",
+    "carrier": "Cascade Logistics",
+    "origin": "Seattle, WA",
+    "destination": "Portland, OR",
+    "linehaul_rate": 2513.05,
+    "accessorials": [
+      {
+        "type": "layover",
+        "amount": 184.76,
+        "authorized": true
+      }
+    ],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1003",
+    "carrier": "Frontier Carriers",
+    "origin": "Dallas, TX",
+    "destination": "Chicago, IL",
+    "linehaul_rate": 2645.26,
+    "accessorials": [],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1004",
+    "carrier": "Cascade Logistics",
+    "origin": "Los Angeles, CA",
+    "destination": "Phoenix, AZ",
+    "linehaul_rate": 1539.1,
+    "accessorials": [],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1005",
+    "carrier": "Apex Trucking",
+    "origin": "Dallas, TX",
+    "destination": "Chicago, IL",
+    "linehaul_rate": 1725.65,
+    "accessorials": [
+      {
+        "type": "fuel_surcharge",
+        "amount": 129.36,
+        "authorized": true
+      }
+    ],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1006",
+    "carrier": "Delta Haul",
+    "origin": "Seattle, WA",
+    "destination": "Portland, OR",
+    "linehaul_rate": 1956.68,
+    "accessorials": [],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1007",
+    "carrier": "Blue Ridge Freight",
+    "origin": "Dallas, TX",
+    "destination": "Chicago, IL",
+    "linehaul_rate": 2169.69,
+    "accessorials": [
+      {
+        "type": "lumper",
+        "amount": 261.37,
+        "authorized": true
+      },
+      {
+        "type": "layover",
+        "amount": 63.75,
+        "authorized": true
+      }
+    ],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1008",
+    "carrier": "Cascade Logistics",
+    "origin": "Atlanta, GA",
+    "destination": "Newark, NJ",
+    "linehaul_rate": 2892.91,
+    "accessorials": [
+      {
+        "type": "lumper",
+        "amount": 186.02,
+        "authorized": true
+      }
+    ],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1009",
+    "carrier": "Evergreen Transport",
+    "origin": "Seattle, WA",
+    "destination": "Portland, OR",
+    "linehaul_rate": 1514.05,
+    "accessorials": [],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1010",
+    "carrier": "Blue Ridge Freight",
+    "origin": "Seattle, WA",
+    "destination": "Portland, OR",
+    "linehaul_rate": 1293.62,
+    "accessorials": [],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1011",
+    "carrier": "Blue Ridge Freight",
+    "origin": "Memphis, TN",
+    "destination": "Columbus, OH",
+    "linehaul_rate": 1772.75,
+    "accessorials": [
+      {
+        "type": "layover",
+        "amount": 302.86,
+        "authorized": true
+      },
+      {
+        "type": "lumper",
+        "amount": 282.8,
+        "authorized": true
+      }
+    ],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1012",
+    "carrier": "Evergreen Transport",
+    "origin": "Dallas, TX",
+    "destination": "Chicago, IL",
+    "linehaul_rate": 2751.61,
+    "accessorials": [
+      {
+        "type": "lumper",
+        "amount": 69.86,
+        "authorized": true
+      }
+    ],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1013",
+    "carrier": "Frontier Carriers",
+    "origin": "Seattle, WA",
+    "destination": "Portland, OR",
+    "linehaul_rate": 1623.76,
+    "accessorials": [
+      {
+        "type": "tarp",
+        "amount": 315.4,
+        "authorized": true
+      }
+    ],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1014",
+    "carrier": "Blue Ridge Freight",
+    "origin": "Memphis, TN",
+    "destination": "Columbus, OH",
+    "linehaul_rate": 1228.6,
+    "accessorials": [],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1015",
+    "carrier": "Evergreen Transport",
+    "origin": "Seattle, WA",
+    "destination": "Portland, OR",
+    "linehaul_rate": 2191.15,
+    "accessorials": [
+      {
+        "type": "fuel_surcharge",
+        "amount": 178.53,
+        "authorized": true
+      }
+    ],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1016",
+    "carrier": "Evergreen Transport",
+    "origin": "Memphis, TN",
+    "destination": "Columbus, OH",
+    "linehaul_rate": 1732.59,
+    "accessorials": [],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1017",
+    "carrier": "Apex Trucking",
+    "origin": "Memphis, TN",
+    "destination": "Columbus, OH",
+    "linehaul_rate": 1109.09,
+    "accessorials": [],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1018",
+    "carrier": "Delta Haul",
+    "origin": "Atlanta, GA",
+    "destination": "Newark, NJ",
+    "linehaul_rate": 2343.13,
+    "accessorials": [
+      {
+        "type": "fuel_surcharge",
+        "amount": 69.06,
+        "authorized": true
+      }
+    ],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1019",
+    "carrier": "Evergreen Transport",
+    "origin": "Houston, TX",
+    "destination": "Denver, CO",
+    "linehaul_rate": 3191.08,
+    "accessorials": [
+      {
+        "type": "lumper",
+        "amount": 254.09,
+        "authorized": true
+      },
+      {
+        "type": "detention",
+        "amount": 84.37,
+        "authorized": true
+      }
+    ],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1020",
+    "carrier": "Blue Ridge Freight",
+    "origin": "Los Angeles, CA",
+    "destination": "Phoenix, AZ",
+    "linehaul_rate": 2667.78,
+    "accessorials": [
+      {
+        "type": "detention",
+        "amount": 138.05,
+        "authorized": true
+      }
+    ],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1021",
+    "carrier": "Evergreen Transport",
+    "origin": "Dallas, TX",
+    "destination": "Chicago, IL",
+    "linehaul_rate": 3093.78,
+    "accessorials": [
+      {
+        "type": "fuel_surcharge",
+        "amount": 278.59,
+        "authorized": true
+      }
+    ],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1022",
+    "carrier": "Blue Ridge Freight",
+    "origin": "Dallas, TX",
+    "destination": "Chicago, IL",
+    "linehaul_rate": 2902.19,
+    "accessorials": [
+      {
+        "type": "fuel_surcharge",
+        "amount": 232.69,
+        "authorized": true
+      }
+    ],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1023",
+    "carrier": "Apex Trucking",
+    "origin": "Los Angeles, CA",
+    "destination": "Phoenix, AZ",
+    "linehaul_rate": 2653.77,
+    "accessorials": [
+      {
+        "type": "fuel_surcharge",
+        "amount": 229.68,
+        "authorized": true
+      },
+      {
+        "type": "detention",
+        "amount": 196.58,
+        "authorized": true
+      }
+    ],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1024",
+    "carrier": "Evergreen Transport",
+    "origin": "Los Angeles, CA",
+    "destination": "Phoenix, AZ",
+    "linehaul_rate": 1450.74,
+    "accessorials": [],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1025",
+    "carrier": "Blue Ridge Freight",
+    "origin": "Memphis, TN",
+    "destination": "Columbus, OH",
+    "linehaul_rate": 2776.85,
+    "accessorials": [
+      {
+        "type": "layover",
+        "amount": 247.93,
+        "authorized": true
+      },
+      {
+        "type": "fuel_surcharge",
+        "amount": 334.05,
+        "authorized": true
+      }
+    ],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1026",
+    "carrier": "Frontier Carriers",
+    "origin": "Los Angeles, CA",
+    "destination": "Phoenix, AZ",
+    "linehaul_rate": 2113.65,
+    "accessorials": [
+      {
+        "type": "tarp",
+        "amount": 328.67,
+        "authorized": true
+      },
+      {
+        "type": "layover",
+        "amount": 276.58,
+        "authorized": true
+      }
+    ],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1027",
+    "carrier": "Evergreen Transport",
+    "origin": "Atlanta, GA",
+    "destination": "Newark, NJ",
+    "linehaul_rate": 2539.78,
+    "accessorials": [
+      {
+        "type": "lumper",
+        "amount": 181.43,
+        "authorized": true
+      }
+    ],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1028",
+    "carrier": "Apex Trucking",
+    "origin": "Memphis, TN",
+    "destination": "Columbus, OH",
+    "linehaul_rate": 1178.31,
+    "accessorials": [],
+    "pod_on_file": true
+  },
+  {
+    "load_id": "L1029",
+    "carrier": "Evergreen Transport",
+    "origin": "Dallas, TX",
+    "destination": "Chicago, IL",
+    "linehaul_rate": 2253.11,
+    "accessorials": [],
+    "pod_on_file": true
+  }
+]
