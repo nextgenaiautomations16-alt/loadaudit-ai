@@ -52,6 +52,7 @@ def extract_with_llm(invoice_text: str) -> dict:
 
 
 def extract_with_heuristics(invoice_text: str) -> dict:
+      invoice_text = "\n".join(l for l in invoice_text.splitlines() if not l.lstrip().startswith(">"))
     """Very simple regex fallback for demo/offline use."""
     def find(pattern, default=None, cast=str):
         m = re.search(pattern, invoice_text, re.IGNORECASE)
